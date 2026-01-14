@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KVG Matrimony</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg fixed-top main-navbar">
+  <div class="container-fluid px-4">
+
+    <a class="navbar-brand d-flex align-items-center" href="#home">
+      <div class="logo-icon me-2">
+         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- Background -->
+          <circle cx="100" cy="100" r="85" fill="#c9cdc6"/>
+
+          <!-- Eye Group -->
+          <g transform-origin="100px 100px">
+
+            <!-- Upper eyelid -->
+            <path
+              d="M55 80 Q100 65 145 78"
+              stroke="#1e2321"
+              stroke-width="10"
+              fill="none"
+              stroke-linecap="round">
+              <animateTransform
+                attributeName="transform"
+                type="translate"
+                values="0 0;0 0;0 18;0 0;0 0"
+                keyTimes="0;0.75;0.8;0.85;1"
+                dur="3s"
+                repeatCount="indefinite"/>
+            </path>
+
+            <!-- Lower eyelid -->
+            <path
+              d="M60 95 Q100 120 140 95"
+              stroke="#1e2321"
+              stroke-width="10"
+              fill="none"
+              stroke-linecap="round"/>
+
+            <!-- Eyelashes -->
+            <g>
+              <path d="M78 108 Q72 120 66 128" stroke="#1e2321" stroke-width="7" fill="none" stroke-linecap="round"/>
+              <path d="M90 110 Q88 125 85 132" stroke="#1e2321" stroke-width="7" fill="none" stroke-linecap="round"/>
+              <path d="M102 112 Q102 128 102 135" stroke="#1e2321" stroke-width="7" fill="none" stroke-linecap="round"/>
+              <path d="M114 110 Q118 125 122 132" stroke="#1e2321" stroke-width="7" fill="none" stroke-linecap="round"/>
+              <path d="M126 108 Q136 120 142 128" stroke="#1e2321" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+              <animate
+                attributeName="opacity"
+                values="1;1;0;1;1"
+                keyTimes="0;0.75;0.8;0.85;1"
+                dur="3s"
+                repeatCount="indefinite"/>
+            </g>
+
+          </g>
+        </svg>
+      </div>
+      KVG Matrimony
+    </a>
+
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link brand-font" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link brand-font" href="#register">Register</a></li>
+        <li class="nav-item"><a class="nav-link brand-font" href="#">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ================= BACKGROUND VIDEO (ONE TIME) ================= -->
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="bg-video.mp4" type="video/mp4">
+</video>
+<div class="video-overlay"></div>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="page-section">
+  <div class="container">
+    <div class="row min-vh-100 align-items-center">
+
+      <div class="col-lg-6 text-white">
+        <h1 class="hero-title glow-text">Welcome To<br>KVG Matrimony</h1>
+        <p class="hero-sub brand-font pt-3">Rooted in values, connected by love.</p>
+      </div>
+
+      <div class="col-lg-5 offset-lg-1">
+        <div class="glass-card ">
+          <h4 class="nav-link brand-font">♥ Find Your Perfect Match</h4>
+          <ul class="feature-list">
+            <li class="nav-link brand-font">✔ Verified Profiles</li>
+            <li class="nav-link brand-font">✔ Secure & Trusted</li>
+            <li class="nav-link brand-font">✔ Easy Search</li>
+          </ul>
+          <button class="btn btn-success w-100 mt-3" onclick="goToRegister()">REGISTER FREE</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= REGISTER ================= -->
+<section id="register" class="page-section">
+  <div class="container">
+    <div class="row min-vh-100 align-items-center">
+
+      <div class="col-lg-6 text-white">
+        <h1 class="hero-title glow-text">
+          Meetings Becomes<br>
+          Greetings
+        </h1>
+        <p class="hero-sub brand-font pt-3">Rooted in values, connected by love.</p>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="form-box">
+
+          <!-- STEP INDICATOR -->
+          <div class="step-indicator">
+            <div class="step-item active"><i class="bi bi-person-circle"></i> Basic</div>
+            <div class="step-item"><i class="bi bi-people"></i> Family</div>
+            <div class="step-item"><i class="bi bi-briefcase"></i> Background</div>
+            <div class="step-item"><i class="bi bi-telephone"></i> Contact</div>
+          </div>
+
+          <!-- STEP 1 -->
+          <div class="form-step active">
+            <div class="form-group">
+              <label>Jaathakar Peyar</label>
+              <input class="form-control" placeholder="Enter full name">
+            </div>
+
+            <div class="form-group">
+              <label>Velai / Thozhil</label>
+              <input class="form-control" placeholder="Your profession">
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label>Vayathu</label>
+                  <input class="form-control" placeholder="Age">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label>Niram – Uyarum</label>
+                  <input class="form-control" placeholder="Complexion & height">
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-success w-100" onclick="nextStep()">Next</button>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="form-step">
+            <div class="form-group">
+              <label>Thanthai Peyar / Thozhil</label>
+              <input class="form-control" placeholder="Father name & profession">
+            </div>
+
+            <div class="form-group">
+              <label>Thaayar Peyar</label>
+              <input class="form-control" placeholder="Mother name">
+            </div>
+
+            <div class="form-group">
+              <label>Udanpirappu Vivaram</label>
+              <input class="form-control" placeholder="Siblings details">
+            </div>
+
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-secondary w-50" onclick="prevStep()">Back</button>
+              <button class="btn btn-success w-50" onclick="nextStep()">Next</button>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="form-step">
+            <div class="form-group">
+              <label>Jaathi / Kulam</label>
+              <input class="form-control" placeholder="Community / clan">
+            </div>
+
+            <div class="form-group">
+              <label>Kula Deivam & Oor</label>
+              <input class="form-control" placeholder="Family deity & native">
+            </div>
+
+            <div class="form-group">
+              <label>Maatha Varumanam</label>
+              <input class="form-control" placeholder="Monthly income">
+            </div>
+
+            <div class="form-group">
+              <label>Idara Varumanam</label>
+              <input class="form-control" placeholder="Other income">
+            </div>
+
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-secondary w-50" onclick="prevStep()">Back</button>
+              <button class="btn btn-success w-50" onclick="nextStep()">Next</button>
+            </div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="form-step">
+            <div class="form-group">
+              <label>Ethirpaarppu</label>
+              <textarea class="form-control" placeholder="Your expectations"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Address with Pincode</label>
+              <input class="form-control" placeholder="Full address">
+            </div>
+
+            <div class="form-group">
+              <label>Mobile Number</label>
+              <input class="form-control" placeholder="10-digit mobile number">
+            </div>
+
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-secondary w-50" onclick="prevStep()">Back</button>
+              <button class="btn btn-primary w-50">Submit</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
